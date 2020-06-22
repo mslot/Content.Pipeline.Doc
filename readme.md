@@ -54,15 +54,3 @@ A secondary solution and more simple onw, would be to ensure that we always can 
 * if the switch is made to region B, but Microsoft has reported that region B is soon going to fall as well. It is then better to switch to region C, but no code can ever guess this
 
 * Maybe the a global APIM can do this out of the box - so we can have multiple import places. We still need to apply a good "follow the sun" strategy
-
-# Interview focus
-1. deploy/release DevOps - good for larger teams
-2. 1-1 on microservices --> 1 repo for on resource in Azure
-3. Topic in service bus is easy if we want to expand
-4. Consumption plan azure functions scales out (compare numbers to premium and standard plans)
-5. Why multiple azure functions in multiple repos? Smaller codebase, easier to build and release
-6. Why topics? Multiple can listen!
-7. Why eventgrid? Built into Azure
-8. Why servicebus and not queuestorage or rabbitmq? servicebus has topics and rabbitmq is still not integrated that well into Azure
-9. Focus on Azure microservice architecture benefits: https://docs.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices#benefits
-10. Maybe CQRS? Dont know if it fits
